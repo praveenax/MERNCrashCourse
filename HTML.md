@@ -1,5 +1,3 @@
-
-
 ### **HTML Cheatsheet**
 
 #### **1. HTML Document Structure**
@@ -253,5 +251,3 @@
   ```
 
 ---
-
-This **HTML Cheatsheet** covers the essential elements, attributes, and concepts, helping you build a strong foundation for web development with HTML!

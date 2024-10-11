@@ -1,8 +1,7 @@
-
-
 ### **JavaScript Cheatsheet**
 
 #### **1. Variables**
+
 - **`let`**: Block-scoped, can be reassigned.
 - **`const`**: Block-scoped, cannot be reassigned.
 - **`var`**: Function-scoped, avoid using due to hoisting issues.
@@ -14,18 +13,20 @@ var z = 15;
 ```
 
 #### **2. Data Types**
+
 - **Primitive**: `String`, `Number`, `Boolean`, `Null`, `Undefined`, `Symbol`, `BigInt`
 - **Non-primitive**: `Object`, `Array`, `Function`
 
 ```javascript
-let name = "John";        // String
-let age = 30;             // Number
-let isStudent = true;     // Boolean
-let person = { name: "John", age: 30 };  // Object
-let colors = ["red", "green", "blue"];   // Array
+let name = "John"; // String
+let age = 30; // Number
+let isStudent = true; // Boolean
+let person = { name: "John", age: 30 }; // Object
+let colors = ["red", "green", "blue"]; // Array
 ```
 
 #### **3. Functions**
+
 - **Function Declaration**:
 
 ```javascript
@@ -37,7 +38,7 @@ function greet(name) {
 - **Function Expression**:
 
 ```javascript
-const greet = function(name) {
+const greet = function (name) {
   return "Hello, " + name;
 };
 ```
@@ -49,6 +50,7 @@ const greet = (name) => `Hello, ${name}`;
 ```
 
 #### **4. Loops**
+
 - **`for` Loop**:
 
 ```javascript
@@ -60,7 +62,7 @@ for (let i = 0; i < 5; i++) {
 - **`forEach` Loop (Array)**:
 
 ```javascript
-colors.forEach(color => console.log(color));
+colors.forEach((color) => console.log(color));
 ```
 
 - **`while` Loop**:
@@ -74,6 +76,7 @@ while (i < 5) {
 ```
 
 #### **5. Conditional Statements**
+
 - **`if` Statement**:
 
 ```javascript
@@ -87,14 +90,20 @@ if (age > 18) {
 - **`switch` Statement**:
 
 ```javascript
-switch(day) {
-  case 1: console.log("Monday"); break;
-  case 2: console.log("Tuesday"); break;
-  default: console.log("Unknown day");
+switch (day) {
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  default:
+    console.log("Unknown day");
 }
 ```
 
 #### **6. Arrays**
+
 - **Create an Array**:
 
 ```javascript
@@ -109,10 +118,11 @@ let fruits = ["Apple", "Banana", "Cherry"];
   - `map()`: Create new array by applying a function to each item.
 
 ```javascript
-let doubled = [1, 2, 3].map(num => num * 2); // [2, 4, 6]
+let doubled = [1, 2, 3].map((num) => num * 2); // [2, 4, 6]
 ```
 
 #### **7. Objects**
+
 - **Create an Object**:
 
 ```javascript
@@ -122,11 +132,12 @@ let car = { brand: "Toyota", model: "Corolla", year: 2020 };
 - **Access Object Properties**:
 
 ```javascript
-console.log(car.brand);   // Dot notation
+console.log(car.brand); // Dot notation
 console.log(car["model"]); // Bracket notation
 ```
 
 #### **8. Object Methods**
+
 - **Define a method inside an object**:
 
 ```javascript
@@ -134,12 +145,13 @@ let person = {
   name: "John",
   greet() {
     console.log(`Hello, ${this.name}`);
-  }
+  },
 };
 person.greet(); // Output: Hello, John
 ```
 
 #### **9. Destructuring**
+
 - **Arrays**:
 
 ```javascript
@@ -153,6 +165,7 @@ const { brand, model } = car;
 ```
 
 #### **10. Spread & Rest Operators**
+
 - **Spread (`...`)**: Expands arrays or objects.
 
 ```javascript
@@ -169,6 +182,7 @@ function sum(...numbers) {
 ```
 
 #### **11. Promises & Async/Await**
+
 - **Promise**:
 
 ```javascript
@@ -176,7 +190,9 @@ let promise = new Promise((resolve, reject) => {
   // Asynchronous work
   resolve("Success!");
 });
-promise.then(result => console.log(result)).catch(error => console.log(error));
+promise
+  .then((result) => console.log(result))
+  .catch((error) => console.log(error));
 ```
 
 - **Async/Await**:
@@ -190,6 +206,7 @@ async function fetchData() {
 ```
 
 #### **12. Template Literals**
+
 - Use backticks to create strings with embedded expressions:
 
 ```javascript
@@ -197,6 +214,7 @@ let greeting = `Hello, ${name}! You are ${age} years old.`;
 ```
 
 #### **13. DOM Manipulation**
+
 - **Select Element**:
 
 ```javascript
@@ -218,6 +236,7 @@ element.addEventListener("click", () => {
 ```
 
 #### **14. JSON**
+
 - **Parse JSON**:
 
 ```javascript
@@ -232,5 +251,3 @@ let stringData = JSON.stringify(obj);
 ```
 
 ---
-
-This cheatsheet covers many essential JavaScript concepts and provides examples for each. You can use this as a quick reference guide to key JavaScript topics!

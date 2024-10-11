@@ -379,5 +379,3 @@ selector {
 - **Rem**: Relative to the font-size of the root element.
 
 ---
-
-This **CSS Cheatsheet** provides a quick reference to essential CSS properties, concepts, and syntax for building and styling web pages effectively!
