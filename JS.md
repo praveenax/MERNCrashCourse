@@ -1,6 +1,4 @@
-Here’s a simple **JavaScript Cheatsheet** covering essential topics and syntax:
 
----
 
 ### **JavaScript Cheatsheet**
 
